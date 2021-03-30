@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | Indian-Tourism</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!------------ HEADER ------------>
+  <header class="header">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a href="#" class="logo">Indian-Tourism</a>
+
+        <nav class="nav">
+          <a href="#" class="nav__link">Login</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-container d-flex justify-content-center align-items-center">
+      <form class="form" id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div style="position: relative;">
+            <input type="password" name="password" id="password">
+            <button class="btn-view-password btn-icon" type="button">
+              <svg class="svg-icon">
+                <use href="/images/sprites.svg#eye"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <p>Are you new here? <a href="/signup">Signup</a></p>
+        <button class="btn-submit" type="submit">Login</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>

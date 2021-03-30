@@ -86,6 +86,19 @@ p {
   margin-bottom: 1rem;
 }
 
+input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem 0.5rem;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
 /* ---------- Utility Classes --------- */
 .d-flex {
   display: flex !important;
@@ -190,6 +203,14 @@ p {
   margin-left: 1rem;
 }
 
+.btn-icon {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  line-height: 0;
+}
+
 /* --------- Hero Img Rect -------- */
 .hero-img-rect {
   display: inline-grid;
@@ -273,8 +294,7 @@ p {
   transition: transform 450ms 150ms ease-in-out;
 }
 
-.carousel:hover .carousel__slide::before,
-.carousel:focus-within .carousel__slide::before {
+.carousel:hover .carousel__slide::before {
   transform: none;
   transition: transform 450ms ease-in-out;
 }
@@ -296,8 +316,7 @@ p {
   transition: 300ms ease-in-out;
 }
 
-.carousel:hover .caption,
-.carousel:focus-within .caption {
+.carousel:hover .caption {
   transform: translate(-50%, -50%);
   transition: 300ms 450ms ease-in-out;
 }
@@ -803,8 +822,8 @@ p {
   min-width: 200px;
   padding: 1.5rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg, #f4f9ff 0%, #ffffff 100%);
-  box-shadow: -30px -26px 47px -19px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(80deg, #f9faff 0%, #ffffff 100%);
+  box-shadow: -20px -20px 40px -15px rgba(0, 0, 0, 0.2);
   transition: transform 200ms ease;
 }
 
@@ -845,4 +864,64 @@ p {
   .blog-card:focus-within {
     transform: translate(-1rem, -2rem) rotate(5deg);
   }
+}
+
+/* -------------- SIGNUP FORM ----------------- */
+.form-container {
+  height: calc(100vh - 79px);
+  padding: 0 1.5rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-view-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.form p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.form p a {
+  color: #698aff;
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.6rem;
+  background: #698aff;
+  background: var(--clr-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  transition: filter 150ms ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  filter: brightness(0.8);
 }

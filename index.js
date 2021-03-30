@@ -54,17 +54,19 @@ const grabSlide = {
   }
 };
 
-$grabSlider.addEventListener('mousedown', (e) => {
-  grabSlide.handleMouseDown(e);
-});
+if ($grabSlider) {
+  $grabSlider.addEventListener('mousedown', (e) => {
+    grabSlide.handleMouseDown(e);
+  });
 
-$grabSlider.addEventListener('mouseup', (e) => {
-  grabSlide.handleMouseUp(e);
-});
+  $grabSlider.addEventListener('mouseup', (e) => {
+    grabSlide.handleMouseUp(e);
+  });
 
-$grabSlider.addEventListener('mouseleave', (e) => {
-  grabSlide.handleMouseLeave(e);
-});
-$grabSlider.addEventListener('mousemove', (e) => {
-  grabSlide.handleMouseMove(e);
-});
+  $grabSlider.addEventListener('mouseleave', (e) => {
+    grabSlide.handleMouseLeave(e);
+  });
+  $grabSlider.addEventListener('mousemove', (e) => {
+    grabSlide.handleMouseMove(e);
+  });
+}
